@@ -6,20 +6,20 @@ export default function Footer() {
   return (
     <footer className="bg-text text-bg border-t border-border">
       <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
-        
+
         {/* Core Local SEO Info (NAP) */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
-          
+
           <div className="md:col-span-2">
             <Link href="/" className="hover:opacity-80 transition-opacity mb-8 block">
-              <img 
-                src="/logo.png" 
-                alt="Buzzell Plumbing, Heating & Air" 
-                className="h-14 w-auto object-contain grayscale brightness-[20] contrast-[200] invert p-1" 
+              <img
+                src="/footer.png"
+                alt="Buzzell Plumbing, Heating & Air"
+                className="h-14 w-auto object-contain grayscale brightness-[20] contrast-[200] invert p-1"
               />
             </Link>
             <p className="text-bg/70 text-sm leading-relaxed max-w-sm mb-8">{siteConfig.description}</p>
-            
+
             <div className="flex items-center gap-6">
               {siteConfig.links.facebook && (
                 <a href={siteConfig.links.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
@@ -38,7 +38,7 @@ export default function Footer() {
               )}
             </div>
           </div>
-          
+
           {/* LOCATIONS FOR LOCAL SEO */}
           <div>
             <h3 className="text-sm font-bold text-bg mb-5 uppercase tracking-widest font-mono text-bg/50">Locations</h3>
@@ -71,7 +71,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <Clock className="w-4 h-4 mt-0.5 text-bg/60 shrink-0" />
-                <span>24/7 Dispatch Available<br/><span className="text-xs opacity-70">No OT charges for VIPs</span></span>
+                <span>24/7 Dispatch Available<br /><span className="text-xs opacity-70">No OT charges for VIPs</span></span>
               </li>
               <li>
                 <Link href="/contact" className="inline-flex items-center text-sm font-semibold border-b border-bg/30 pb-0.5 hover:border-bg transition-colors">
