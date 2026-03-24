@@ -15,7 +15,7 @@ export default function Footer() {
               <img
                 src="/footer.png"
                 alt="Buzzell Plumbing, Heating & Air"
-                className="h-14 w-auto object-contain grayscale brightness-[20] contrast-[200] invert p-1"
+                className="h-14 w-auto object-contain "
               />
             </Link>
             <p className="text-bg/70 text-sm leading-relaxed max-w-sm mb-8">{siteConfig.description}</p>

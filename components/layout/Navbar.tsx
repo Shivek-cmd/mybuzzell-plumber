@@ -17,22 +17,21 @@ export default function Navbar() {
   return (
     <>
       <motion.header initial={{ y: -80 }} animate={{ y: 0 }} transition={{ duration: 0.5 }}
-        className={`fixed top-0 left-0 right-0 z-[var(--z-sticky)] transition-all duration-300 ${
-          scrolled ? 'bg-bg/80 backdrop-blur-md border-b border-border shadow-sm' : 'bg-transparent'
-        }`}>
+        className={`fixed top-0 left-0 right-0 z-[var(--z-sticky)] transition-all duration-300 ${scrolled ? 'bg-bg/80 backdrop-blur-md border-b border-border shadow-sm' : 'bg-transparent'
+          }`}>
         <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
             <Link href="/" className="hover:opacity-80 transition-opacity">
               <img src="/logo.png" alt="Buzzell Plumbing, Heating & Air" className="h-8 md:h-12 w-auto object-contain" />
             </Link>
-            
+
             <nav className="hidden md:flex items-center gap-8" aria-label="Main navigation">
               {navItems.map(item => (
                 <div key={item.label} className="relative"
                   onMouseEnter={() => item.children && setActiveDropdown(item.label)}
                   onMouseLeave={() => setActiveDropdown(null)}>
-                  
+
                   {item.children ? (
                     <button className="flex items-center gap-1 text-sm font-medium text-muted hover:text-text transition-colors py-2">
                       {item.label}
