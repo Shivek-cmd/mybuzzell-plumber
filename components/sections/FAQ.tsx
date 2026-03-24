@@ -41,9 +41,10 @@ export default function FAQ({
                 <HelpCircle className="w-4 h-4 text-primary" />
                 {overline}
               </div>
-              <h2 className="font-display text-4xl md:text-6xl font-black text-text mb-6 tracking-tight leading-[1.1]">
-                {title}
-              </h2>
+              <h2 
+                className="font-display text-4xl md:text-6xl font-black text-text mb-6 tracking-tight leading-[1.1]"
+                dangerouslySetInnerHTML={{ __html: title }}
+              />
               <p className="text-muted text-lg font-medium leading-relaxed max-w-sm">
                 {description}
               </p>

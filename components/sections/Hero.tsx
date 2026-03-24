@@ -62,13 +62,13 @@ export default function Hero() {
 
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.9 }}
-              className="flex flex-col sm:flex-row gap-4">
+              className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
               <MagneticButton>
-                <Button size="xl" href="/contact">
+                <Button size="xl" href="/contact" className="w-full sm:w-auto whitespace-nowrap justify-center">
                   Book Instantly MGA <ArrowRight className="w-5 h-5 flex-shrink-0" />
                 </Button>
               </MagneticButton>
-              <Button variant="secondary" size="xl" href="/financing">
+              <Button variant="secondary" size="xl" href="/financing" className="w-full sm:w-auto justify-center">
                 View Financing
               </Button>
             </motion.div>
@@ -79,7 +79,7 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.2, ease: "easeOut" }}
-            className="relative"
+            className="relative hidden lg:block"
           >
             {/* Organic Floating Shape Container */}
             <motion.div

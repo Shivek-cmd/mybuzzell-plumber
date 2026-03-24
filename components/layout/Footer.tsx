@@ -12,7 +12,11 @@ export default function Footer() {
           
           <div className="md:col-span-2">
             <Link href="/" className="hover:opacity-80 transition-opacity mb-8 block">
-              <img src="/logo.png" alt="Buzzell Plumbing, Heating & Air" className="h-12 w-auto object-contain brightness-0 invert" />
+              <img 
+                src="/logo.png" 
+                alt="Buzzell Plumbing, Heating & Air" 
+                className="h-14 w-auto object-contain grayscale brightness-[20] contrast-[200] invert p-1" 
+              />
             </Link>
             <p className="text-bg/70 text-sm leading-relaxed max-w-sm mb-8">{siteConfig.description}</p>
             
